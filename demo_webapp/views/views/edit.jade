@@ -1,0 +1,17 @@
+extends ../layout
+
+block content 
+    // load css required for this page alone
+    link(rel='stylesheet', href='/stylesheets/edit.css')
+    
+    h2 #{title}
+    
+    //Edit inventory form
+    form(method='post', action='/inventory/' + task.id, enctype='application/json')
+        label Edit name
+            div.input
+                input(type='text', name='task', class='xlarge', value="#{task.task}")
+            div.actions
+                // Action buttons
+                input(type='submit', value='Save', class='btn primary')         
+                a(href='/home' class='del') Cancel

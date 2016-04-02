@@ -1,0 +1,27 @@
+doctype html
+
+html
+  head
+    //Application meta data
+    meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+    meta(name="author" content="gokulnathpalanivel@gmail.com")
+    meta(name="description" content="FullStack JavaScript Demo Project")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    
+    title= 'ABC dot COM'
+    
+    // load JS and CSS common to all pages of the application
+    script(src="/javascripts/jquery-1.12.2.min.js")
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/stylesheets/common.css')
+    
+  body
+    div.wrapper
+        //Add header
+        include ./includes/header.jade
+        // Main content 
+        section 
+            block content
+        //Add Footer
+        include ./includes/footer.jade

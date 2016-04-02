@@ -1,0 +1,33 @@
+/*Home page CSS*/
+.stpBtn{
+    border: 1px solid #2E84BD;
+    background: #3D8BBF;
+    color: #FFFFFF;
+    width: 98%;
+    padding:10px 1%;
+    margin: 4px 0 0 0;
+    cursor:pointer
+}
+.cntr {
+    border: 1px solid #CCCCCC;
+    padding: 20px 2%;
+    width: 96%;
+    min-height: 50px;
+}
+.tgl {
+    margin: 0 8px 0 0;
+    padding: 3px 7px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+.active{
+    background-color: #FFFFFF;
+    color: #555555;
+}
+.lnk{
+    margin: 0 2%;
+}
+.btn-primary{
+    margin:50px 0;
+    
+}

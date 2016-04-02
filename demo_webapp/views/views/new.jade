@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+    // load css required for this page alone
+    link(rel='stylesheet', href='/stylesheets/new.css')
+    
+    h2 #{title}
+    
+    //New inventory creation form
+    form(method='post', action='/inventory', enctype='application/json')
+        label Name
+            div.input
+                input(type='text', name='task', class='xlarge')
+            div.actions
+                // Action buttons
+                input(type='submit', value='Save', class='btn btn-primary')         
+                a(href='/home' class='del') Cancel

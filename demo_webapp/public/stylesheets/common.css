@@ -1,0 +1,44 @@
+/*CSS common to all pages*/
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    min-width: 320px;
+    height: 100%;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+@media (max-width: 767px){
+    body {
+        padding: 0
+    }
+}
+h2{
+    font-size: 24px;
+    color: #333333
+}
+section{
+    padding: 0 1% 100px 1%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+.fl{
+    float: left
+}
+.fr{
+    float: right  
+}
+.clb{
+    clear:both
+}
+.dspNone{
+    display: none
+}
+.del{
+    margin: 0 3% 0 3%   
+}
+.wrapper {
+    min-height: 100%;
+    position: relative
+}

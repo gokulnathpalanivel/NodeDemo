@@ -1,0 +1,36 @@
+/*Header section*/
+header{
+    background-color: darkslategray;
+    color: #FFFFFF;
+    padding: 20px 1% 25px 1%;
+}
+.hd{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.ttl {
+    font-size: 20px;
+    font-style: italic;
+    border: 1px solid #fff;
+    padding: 5px 10px 0 10px;
+    font-family: fantasy;
+    border-bottom: 7px solid #FFFFFF
+}
+h1 {
+    font-size: 20px;
+    display: inline-block;
+    margin: 0;
+    font-weight: 100
+}
+.hd a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.nav{
+    margin: 10px 0 0 0
+}
+.dvd {
+    padding: 0 5px;
+    font-size: 18px;
+    color: #999
+}

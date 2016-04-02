@@ -1,0 +1,34 @@
+extends ../layout
+
+block content
+    // load js and css required for this page alone
+    script(src="/javascripts/inventories.js")
+    link(rel='stylesheet', href='/stylesheets/inventories.css')
+    
+    h2 Inventories List
+
+    //list all inventories in database
+    - if(docs.length)
+        div
+            each task, index in docs
+                div(class='cat_'+(index+1))
+                    div.stpBtn
+                        span.tgl(class=index === 0 ? "active" : "") #{index+1}
+                        span #{task.task}
+                    div.cntr(class=index === 0 ? "" : "dspNone")
+                        //Inventory details
+                        p
+                            b Description: 
+                            div This is hard coded contnet for category #{index+1} available in inventories database. Visit later for detailed descriptions.. Site under development mode..
+                            
+                        //Action buttons for inventory    
+                        a.lnk(href='/inventory/#{task.id}/edit') Edit
+                        a.btn.btn-default.del(href='/inventory/#{task.id}/delete') Delete
+
+    - else
+        // Error message for no entries in DB
+        p Your inventory is empty. Add Listing categories/inventory to your store!!            
+
+    // Add more invertory section
+    p
+        a(href='/inventory/new', class='btn btn-primary') Add more inventory >>
